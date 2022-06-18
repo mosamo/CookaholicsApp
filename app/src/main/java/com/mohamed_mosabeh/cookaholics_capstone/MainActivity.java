@@ -16,7 +16,21 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
     
-    
+    /* TODO:
+          1. Home Screen
+          1.5. Home Screen Design                          ⭐
+          3. Splash Screen
+          4. Account Privileges
+          5. Entity & Table Design (Fields, Datatypes)     ⭐
+            6. After Step 5: Recipe DAO
+          7. Manage Account Screen
+          8. Categories
+            9. After Step 5: Comment and Likes
+          10. Sorting by Filters
+          11.
+          
+          
+     */
     private FirebaseDatabase database;
     private DatabaseReference reference;
     
@@ -37,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Toast.makeText(getApplicationContext(), "xxxx!", Toast.LENGTH_SHORT).show();
-                String text = snapshot.child("1").child("name").getValue(String.class);
+                String text = snapshot.child(view.getTag().toString()).child("name").getValue(String.class);
                 textView.setText(text);
             }
     
