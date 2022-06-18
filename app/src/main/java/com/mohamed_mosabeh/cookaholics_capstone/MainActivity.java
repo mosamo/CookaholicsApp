@@ -16,14 +16,14 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
     
-    /* TODO:
-          1. Home Screen
-          1.5. Home Screen Design                          ⭐
+    /* TODO: (You have all firebase priveleges)
+          1. Home Screen--
+          1.5. Home Screen Design XML                      ⭐ Hamad
           3. Splash Screen
           4. Account Privileges
-          5. Entity & Table Design (Fields, Datatypes)     ⭐
+          5. Entity & Table Design (Fields, Datatypes)     ⭐ Mohamed
             6. After Step 5: Recipe DAO
-          7. Manage Account Screen
+          7. Manage Account Screen XML                     ⭐ Abdulla
           8. Categories
             9. After Step 5: Comment and Likes
           10. Sorting by Filters
